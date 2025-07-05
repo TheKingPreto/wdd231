@@ -1,11 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="WDD 231 - Home Page" />
+  <meta name="author" content="Lucas Silva" />
+  <title>Home | WDD231</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/small.css" />
+  <link rel="stylesheet" href="styles/larger.css" />
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
 </head>
 <body>
-    
+  <header>
+    <img src="images/logo.svg" alt="Site Logo" class="logo" />
+    <span>Lucas Silva</span>
+    <button id="menuBtn" aria-label="Menu">☰</button>
+  </header>
+
+  <nav id="navMenu" class="hidden">
+    <a href="index.html">Home</a>
+    <a href="chamber/index.html">Chamber Project</a>
+    <a href="final/index.html">Final Project</a>
+  </nav>
+
+  <main>
+    <h1>Home</h1>
+
+    <div class="top-sections">
+      <section>
+        <h2>About Me</h2>
+        <p>My name is Lucas Silva. I'm a curious and determined person, currently studying Web Development as part of the WDD231 course. I'm passionate about building responsive, accessible, and well-structured interfaces, always striving to balance technical quality with visual clarity.</p>
+        <p>Outside the screen, I'm deeply passionate about sports — especially basketball — which teaches me discipline, focus, and teamwork. I try to apply those same qualities to my learning and coding journey.</p>
+        <p>I'm also drawn to philosophy, particularly topics like hermeneutics and the search for truth, which inspire me to go deeper and be intentional in everything I do. This site represents another step in my growth as a front-end developer.</p>
+      </section>
+
+      <section>
+        <h2>Student Photo</h2>
+        <img src="images/profile.jpg" alt="Photo of Lucas Silva" />
+      </section>
+    </div>
+
+    <section class="courses">
+      <h2>Web Certificate Courses</h2>
+
+      <div class="filters">
+        <button id="all">All</button>
+        <button id="cse">CSE</button>
+        <button id="wdd">WDD</button>
+      </div>
+
+      <div id="courses"></div>
+      <p id="totalCredits"></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social">
+      <a href="https://github.com/TheKingPreto" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/lucas-oliveira-silva032" target="_blank">LinkedIn</a>
+    </div>
+    <p>&copy; <span id="currentyear"></span> • Lucas Silva • Rio Grande do Sul, Brazil</p>
+    <p id="lastModified"></p>
+  </footer>
 </body>
 </html>
