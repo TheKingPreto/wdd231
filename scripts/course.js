@@ -3,9 +3,9 @@ const courses = [
   { code: "WDD 131", name: "Dynamic Web Fundamentals", credits: 2, category: "WDD", completed: true },
   { code: "WDD 231", name: "Web Front-end Development 1", credits: 2, category: "WDD", completed: false },
   { code: "WDD 330", name: "Web Front-end Development 2", credits: 2, category: "WDD", completed: false },
-  { code: "CSE 111", name: "Programming with Functions Current Retake", credits: 2, category: "WDD", completed: true },
-  { code: "CSE 210", name: "Programming with Classes", credits: 2, category: "WDD", completed: true },
-  { code: "CSEPC 110", name: "Introduction to Programming", credits: 2, category: "WDD", completed: true }
+  { code: "CSE 111", name: "Programming with Functions Current Retake", credits: 2, category: "CSE", completed: true },
+  { code: "CSE 210", name: "Programming with Classes", credits: 2, category: "CSE", completed: true },
+  { code: "CSEPC 110", name: "Introduction to Programming", credits: 2, category: "CSE", completed: true }
 ];
 
 function displayCourses(filter = "All") {
