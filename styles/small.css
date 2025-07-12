@@ -28,7 +28,7 @@ header {
 }
 
 nav {
-  display: flex;
+  display: none;
   flex-direction: column;
   background-color: #444;
 }
@@ -43,6 +43,14 @@ nav a {
 
 nav a:hover {
   background-color: #555;
+}
+
+nav.show {
+  display: flex;
+}
+
+#menuBtn {
+  display: block;
 }
 
 .hidden {
@@ -121,3 +129,11 @@ footer .social a {
 footer .social a:hover {
   text-decoration: underline;
 }
+
+#totalCredits {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+

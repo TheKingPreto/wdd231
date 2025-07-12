@@ -11,19 +11,38 @@ const courses = [
 function displayCourses(filter = "All") {
   const container = document.getElementById("courses");
   container.innerHTML = "";
+
   const filtered = courses.filter(course => filter === "All" || course.category === filter);
-  let total = 0;
+
+  let totalCompletedCredits = 0;
+  let completedCount = 0;
+  let incompleteCount = 0;
 
   filtered.forEach(course => {
     const card = document.createElement("div");
     card.className = `course ${course.completed ? "completed" : ""}`;
     card.innerHTML = `<h3>${course.code}</h3><p>${course.name}</p><p>${course.credits} credits</p>`;
     container.appendChild(card);
-    total += course.credits;
+
+    if (course.completed) {
+      totalCompletedCredits += course.credits;
+      completedCount++;
+    } else {
+      incompleteCount++;
+    }
   });
 
-  document.getElementById("totalCredits").textContent = `The total credits for course listed above is ${total}`;
+  const totalCreditsEl = document.getElementById("totalCredits");
+  totalCreditsEl.innerHTML = `
+    You have <strong>${totalCompletedCredits}</strong> earned credits from the courses listed above.<br>
+    🟢 <strong>${completedCount}</strong> course(s) completed | 🔴 <strong>${incompleteCount}</strong> course(s) incomplete
+  `;
+  totalCreditsEl.style.textAlign = "center";
+  totalCreditsEl.style.fontWeight = "bold";
 }
+
+
+
 
 document.getElementById("all").addEventListener("click", () => displayCourses("All"));
 document.getElementById("cse").addEventListener("click", () => displayCourses("CSE"));
