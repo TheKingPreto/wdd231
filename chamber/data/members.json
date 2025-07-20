@@ -1,0 +1,65 @@
+[
+  {
+    "name": "TechNova Solutions",
+    "address": "123 Tech Street, Silicon City",
+    "phone": "555-123-4567",
+    "website": "https://technova.example.com",
+    "image": "technova.png",
+    "membership": 3,
+    "info": "Innovative software and IT services."
+  },
+  {
+    "name": "Green Leaf Market",
+    "address": "45 Organic Ave, Greentown",
+    "phone": "555-987-6543",
+    "website": "https://greenleaf.example.com",
+    "image": "greenleaf.webp",
+    "membership": 2,
+    "info": "Fresh and organic groceries."
+  },
+  {
+    "name": "Sunny's Gym",
+    "address": "67 Fit Blvd, Muscle Bay",
+    "phone": "555-222-3344",
+    "website": "https://sunnysgym.example.com",
+    "image": "sunnysgym.jpg",
+    "membership": 1,
+    "info": "Community fitness and wellness center."
+  },
+  {
+    "name": "Bella Beauty Spa",
+    "address": "89 Glow St, Beautytown",
+    "phone": "555-321-6789",
+    "website": "https://bellaspa.example.com",
+    "image": "bellaspa.jpg",
+    "membership": 2,
+    "info": "Relaxation and rejuvenation."
+  },
+  {
+    "name": "Ace Hardware",
+    "address": "101 Tools Rd, Handy City",
+    "phone": "555-876-1230",
+    "website": "https://acehardware.example.com",
+    "image": "acehardware.png",
+    "membership": 1,
+    "info": "Your neighborhood hardware store."
+  },
+  {
+    "name": "Blue Sky Travel",
+    "address": "33 Horizon Ln, Travelton",
+    "phone": "555-444-7890",
+    "website": "https://blueskytravel.example.com",
+    "image": "blueskytravel.png",
+    "membership": 3,
+    "info": "Plan your dream vacations here."
+  },
+  {
+    "name": "QuickFix Tech Repairs",
+    "address": "77 Gadget Ave, Fixville",
+    "phone": "555-666-1122",
+    "website": "https://quickfix.example.com",
+    "image": "quickfix.jpg",
+    "membership": 1,
+    "info": "Fast repairs for phones and devices."
+  }
+]
