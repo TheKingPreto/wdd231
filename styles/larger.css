@@ -124,6 +124,31 @@
   .filters button:hover {
     background-color: #ddd;
   }
+  dialog {
+    border: 1px solid rgb(0 0 0 / 10%);
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+  }
+
+  ::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  dialog button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: .5rem 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    background: #eee;
+    cursor: pointer;
+  }
+
 
   footer {
     display: flex;
