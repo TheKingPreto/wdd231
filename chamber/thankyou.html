@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Thank you for joining the Chamber">
+  <title>Thank You | Chamber of Commerce</title>
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+  <header>
+    <h1>Local Chamber of Commerce</h1>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Thank You!</h2>
+    <p>We appreciate your interest in joining our chamber. Below are the details you submitted:</p>
+
+    <ul id="form-details"></ul>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Chamber of Commerce</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const params = new URLSearchParams(window.location.search);
+    const detailsList = document.getElementById("form-details");
+
+    const fields = ['firstName', 'lastName', 'email', 'phone', 'organization', 'timestamp'];
+    fields.forEach(field => {
+      if (params.get(field)) {
+        const li = document.createElement('li');
+        li.textContent = `${field}: ${params.get(field)}`;
+        detailsList.appendChild(li);
+      }
+    });
+  </script>
+</body>
+</html>
