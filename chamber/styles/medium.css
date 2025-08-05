@@ -1,0 +1,11 @@
+@media (min-width: 641px) and (max-width: 1024px) {
+  #discover-container {
+    grid-template-areas:
+      "sidebar cards";
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}

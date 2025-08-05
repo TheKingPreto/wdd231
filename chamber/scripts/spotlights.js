@@ -1,4 +1,4 @@
-const spotlightContainer = document.querySelector("#spotlights");
+const spotlightContainer = document.querySelector(".spotlight-container");
 
 async function getMembers() {
   const response = await fetch("data/members.json");
@@ -19,10 +19,16 @@ function displaySpotlights(members) {
     const card = document.createElement("section");
     card.classList.add("spotlight-card");
 
+    const membershipLevel = member.membership === 3 ? "Gold" : "Silver";
+
+    const membershipLevels = ["Basic", "Silver", "Gold"];
+
     card.innerHTML = `
       <img src="images/${member.image}" alt="Logo of ${member.name}">
       <h3>${member.name}</h3>
       <p>${member.info}</p>
+      <p><strong>Endereço:</strong> ${member.address}</p>
+      <p><strong>Associação:</strong> ${membershipLevels[member.membership - 1]}</p>
       <p><a href="${member.website}" target="_blank">Visitar site</a></p>
     `;
 

@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Central Park",
+    "image": "images/central-park.webp",
+    "address": "1 Salgado Filho Ave, Gravataí",
+    "description": "A beautiful place to relax and enjoy nature."
+  },
+  {
+    "title": "City Museum",
+    "image": "images/city-museum.webp",
+    "address": "541 Nossa Sra. dos Anjos St, Gravataí",
+    "description": "Discover the local history and cultural heritage."
+  },
+  {
+    "title": "Riverwalk",
+    "image": "images/riverwalk.webp",
+    "address": "1 Alfredo Soares Pitres St, Gravataí",
+    "description": "A scenic walking trail around the river."
+  },
+  {
+    "title": "Tech Innovation Hub",
+    "image": "images/tech-hub.webp",
+    "address": "294 Ciudadela 4 St, Gravataí",
+    "description": "The city's center for startups and technology."
+  },
+  {
+    "title": "Art Gallery",
+    "image": "images/art-gallery.webp",
+    "address": "Downtown Anapio Gomes St, Gravataí",
+    "description": "Local artists showcase their masterpieces."
+  },
+  {
+    "title": "Community Sports Complex",
+    "image": "images/sports-complex.webp",
+    "address": "160 Centenario Ave, Gravataí",
+    "description": "Sports facilities for all ages and abilities."
+  },
+  {
+    "title": "Center of Gaucho Traditions",
+    "image": "images/ctg.webp",
+    "address": "1553 Adolfo Inacio de Barcelos St, Gravataí",
+    "description": "A place to dance the Gaucho's traditional songs"
+  },
+  {
+    "title": "Farmers Market",
+    "image": "images/farmers-market.webp",
+    "address": "65 Raimundo Loff St, Gravataí",
+    "description": "Fresh local produce and crafts every weekend."
+  }
+]

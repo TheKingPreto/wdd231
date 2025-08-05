@@ -1,0 +1,57 @@
+#discover-container {
+  display: grid;
+  grid-template-areas:
+    "sidebar"
+    "cards";
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.cards {
+  grid-area: cards;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 10px;
+  background: white;
+}
+
+.card figure {
+  margin: 0;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #0077cc;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (hover: hover) {
+  .card img:hover {
+    filter: brightness(0.9) contrast(1.2);
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+  }
+}
