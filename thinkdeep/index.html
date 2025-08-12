@@ -1,0 +1,90 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Think Deep — Interactive Introduction to Philosophy</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta name="description"
+    content="Think Deep: philosopher profiles, famous quotes, and a space to explore schools of thought.">
+  <meta name="author" content="Lucas Silva - Brazil">
+  <meta property="og:title" content="Think Deep — An Introduction to Philosophy">
+  <meta property="og:description" content="Explore philosopher profiles, famous quotes, and schools of thought.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thekingpreto.github.io/wdd231/thinkdeep/">
+  <meta property="og:image" content="https://thekingpreto.github.io/wdd231/thinkdeep/images/og-image.png">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Merriweather:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/philosophers.css">
+</head>
+
+<body>
+  <header>
+    <div class="topbar container">
+      <div class="brand">Think Deep</div>
+      <button id="menu-toggle" aria-label="Abrir menu">☰</button>
+      <nav id="nav-menu" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Philosophers</a></li>
+          <li><a href="quotes.html" class="view-quotes">Quotes</a></li>
+          <li><a href="schools.html">Schools</a></li>
+          <li><a href="contribute.html" class="cta">Contribute</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="hero">
+      <div class="container content">
+        <div>
+          <h1>Explore ideas. Reflect. Think deeper.</h1>
+          <p>Think Deep is an interactive introduction to philosophy: thinker profiles, famous quotes, and a practical
+            path to understanding schools of thought, designed for beginners and enthusiasts alike.</p>
+          <div class="hero-actions">
+            <a href="#quotes" class="muted">View quotes</a>
+          </div>
+        </div>
+        <aside id="qotd-container">
+          <h3>Quote of the Day</h3>
+          <p class="muted">Loading quote...</p>
+        </aside>
+      </div>
+    </div>
+  </header>
+  <main class="container">
+    <section id="philosophers">
+      <h2>Influential Philosophers</h2>
+      <p class="muted">A starting selection of the most cited and studied thinkers. Click "view profile" for a brief
+        bio.</p>
+      <div class="search-wrapper">
+        <input type="text" id="searchBar" placeholder="Search for any philosopher...">
+      </div>
+      <div class="grid" id="philosopherGrid">
+      </div>
+    </section>
+  </main>
+  <div id="philosopherModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <img id="modalImage" alt="" class="modal-image" loading="lazy" decoding="async">
+      <h2 id="modalName"></h2>
+      <p class="years" id="modalYears"></p>
+      <blockquote id="modalQuote"></blockquote>
+      <p id="modalBio"></p>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div>© Think Deep - Lucas Silva - Brazil <small class="muted">Proposal</small></div>
+      <div>
+        <a href="attributions.html" class="footer-link">Attributions</a>
+        <a href="privacy.html" class="footer-link">Privacy</a>
+        <a href="contact.html" class="footer-link">Contact</a>
+      </div>
+    </div>
+  </footer>
+  <script src="scripts/index.js" type="module"></script>
+</body>
+
+</html>

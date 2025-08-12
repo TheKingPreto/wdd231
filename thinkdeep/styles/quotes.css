@@ -1,0 +1,80 @@
+.favorite-btn {
+  position: absolute;
+  top: 0.5rem;    
+  right: 0.5rem;  
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s, color 0.3s;
+}
+
+.favorite-btn.favorited {
+    color: #f39c12;
+}
+
+.favorite-btn:hover {
+  transform: scale(1.1);
+}
+
+#quoteSearchBar {
+    padding: 0.6rem;
+    border-radius: 6px;
+    border: 1px solid rgba(44, 62, 80, 0.12);
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.quote-details {
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+}
+
+.quote-details p {
+  margin: 0.3rem 0;
+  color: #555;
+}
+
+.quote {
+  margin: 0 auto; 
+  max-width: 90%; 
+  padding: 0 0.5rem;
+  font-style: italic;
+}
+
+.quote-text {
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+  font-size: 1.1rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  flex-grow: 1;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+}
+
+.quote-author {
+  margin-top: auto;
+  padding-top: 1rem;
+  text-align: right;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+#quotes-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+@media (max-width: 768px) {
+  .philosopher-card {
+    min-height: 200px;
+  }
+}
+

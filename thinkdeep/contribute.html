@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contribute — Think Deep</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta name="description" content="Contribute to Think Deep by sharing your favorite philosophers and quotes.">
+  <meta name="author" content="Lucas Silva - Brazil">
+  <meta property="og:title" content="Contribute to Think Deep">
+  <meta property="og:description" content="Share your favorite philosopher or a profound quote with the Think Deep community.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thekingpreto.github.io/wdd231/thinkdeep/contribute.html">
+  <meta property="og:image" content="https://thekingpreto.github.io/wdd231/thinkdeep/images/og-image.png">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/form.css">
+</head>
+
+<body>
+  <header>
+    <div class="topbar container">
+      <div class="brand">Think Deep</div>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Philosophers</a></li>
+          <li><a href="quotes.html">Quotes</a></li>
+          <li><a href="schools.html">Schools</a></li>
+          <li><a href="contribute.html" class="cta">Contribute</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="hero">
+      <div class="container content">
+        <div>
+          <h1>Share Your Wisdom</h1>
+          <p>Have a favorite philosopher or a profound quote to share? Contribute to our growing collection of ideas.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="contribution-form">
+      <h2>Your Contribution</h2>
+      <form action="thankyou.html" method="get">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required placeholder="example@domain.com">
+
+        <label for="contributionType">Type of Contribution:</label>
+        <select id="contributionType" name="contributionType">
+          <option value="Philosopher Suggestion">Philosopher Suggestion</option>
+          <option value="Quote Suggestion">Quote Suggestion</option>
+          <option value="General Feedback">General Feedback</option>
+        </select>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required>
+
+        <label for="message">Your Message / Quote:</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <button type="submit">Submit Contribution</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>© <span id="currentYear"></span> Think Deep - Lucas Silva - Brazil <small class="muted">Proposal</small></div>
+      <div>
+        <a href="attributions.html" class="footer-link">Attributions</a>
+        <a href="privacy.html" class="footer-link">Privacy</a>
+        <a href="contact.html" class="footer-link">Contact</a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

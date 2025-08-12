@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Thank You — Think Deep</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta name="description" content="Thank you for your contribution to Think Deep.">
+  <meta name="author" content="Lucas Silva - Brazil">
+  <meta property="og:title" content="Thank You! — Think Deep">
+  <meta property="og:description" content="We've received your submission. Thank you for helping grow the Think Deep project.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thekingpreto.github.io/wdd231/thinkdeep/thank-you.html">
+  <meta property="og:image" content="https://thekingpreto.github.io/wdd231/thinkdeep/images/og-image.png">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
+</head>
+
+<body>
+  <header>
+    <div class="topbar container">
+      <div class="brand">Think Deep</div>
+      <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html">Philosophers</a></li>
+            <li><a href="quotes.html">Quotes</a></li>
+            <li><a href="schools.html">Schools</a></li>
+            <li><a href="contribute.html" class="cta">Contribute</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="hero">
+      <div class="container content">
+        <div>
+          <h1>Thank You!</h1>
+          <p>Your contribution has been received. We appreciate you taking the time to share your wisdom with us.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="summary">
+      <h2>Submission Summary</h2>
+      <p>Here is the information you submitted:</p>
+      <div id="results-container"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>© <span id="currentYear"></span> Think Deep — Lucas Silva - Brazil <small class="muted">Proposal</small></div>
+      <div>
+        <a href="attributions.html" class="footer-link">Attributions</a>
+        <a href="privacy.html" class="footer-link">Privacy</a>
+        <a href="contact.html" class="footer-link">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+    
+    const resultsContainer = document.getElementById('results-container');
+    const params = new URLSearchParams(window.location.search);
+
+    let html = '<ul>';
+    params.forEach((value, key) => {
+      const formattedKey = key.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase());
+      html += `<li><strong>${formattedKey}:</strong> ${value}</li>`;
+    });
+    html += '</ul>';
+
+    resultsContainer.innerHTML = html;
+  </script>
+</body>
+</html>
